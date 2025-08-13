@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block title %}Modelos de Servicio - Inmobiliaria Martin Jaramillo{% endblock %}
+{% block content %}
+<h1 style="color:#0d47a1; font-weight:800; font-size:2.3rem; margin-bottom:18px; text-align:center; letter-spacing:1.1px;">
+  Cómo funciona
+</h1>
+
+<!-- Tarjetas con icono y estilo atractivo -->
+<div style="display:grid; grid-template-columns:repeat(2, minmax(260px,1fr)); gap:18px; max-width:900px; margin:0 auto 32px;">
+  <div style="background:#fff; border:1px solid #dbe3ff; border-radius:12px; padding:18px; box-shadow:0 6px 18px rgba(21,101,192,0.12);">
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+      <span aria-hidden="true" style="width:38px; height:38px; border-radius:10px; background:#e3f2fd; display:inline-flex; align-items:center; justify-content:center; color:#0d47a1; font-weight:800;">1</span>
+      <h3 style="color:#0d47a1; margin:0; font-size:1.1rem;">Diagnóstico de necesidades</h3>
+    </div>
+    <p style="color:#555; margin:0;">Entendemos tu perfil, tiempos y objetivos para definir una búsqueda eficaz.</p>
+  </div>
+
+  <div style="background:#fff; border:1px solid #dbe3ff; border-radius:12px; padding:18px; box-shadow:0 6px 18px rgba(21,101,192,0.12);">
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+      <span aria-hidden="true" style="width:38px; height:38px; border-radius:10px; background:#e3f2fd; display:inline-flex; align-items:center; justify-content:center; color:#0d47a1; font-weight:800;">2</span>
+      <h3 style="color:#0d47a1; margin:0; font-size:1.1rem;">Búsqueda y preselección</h3>
+    </div>
+    <p style="color:#555; margin:0;">Filtramos y preseleccionamos propiedades que encajan contigo, con reportes claros.</p>
+  </div>
+
+  <div style="background:#fff; border:1px solid #dbe3ff; border-radius:12px; padding:18px; box-shadow:0 6px 18px rgba(21,101,192,0.12);">
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+      <span aria-hidden="true" style="width:38px; height:38px; border-radius:10px; background:#e3f2fd; display:inline-flex; align-items:center; justify-content:center; color:#0d47a1; font-weight:800;">3</span>
+      <h3 style="color:#0d47a1; margin:0; font-size:1.1rem;">Verificación legal</h3>
+    </div>
+    <p style="color:#555; margin:0;">Revisión documental y validaciones para evitar sorpresas.</p>
+  </div>
+
+  <div style="background:#fff; border:1px solid #dbe3ff; border-radius:12px; padding:18px; box-shadow:0 6px 18px rgba(21,101,192,0.12);">
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+      <span aria-hidden="true" style="width:38px; height:38px; border-radius:10px; background:#e3f2fd; display:inline-flex; align-items:center; justify-content:center; color:#0d47a1; font-weight:800;">4</span>
+      <h3 style="color:#0d47a1; margin:0; font-size:1.1rem;">Cierre y acompañamiento</h3>
+    </div>
+    <p style="color:#555; margin:0;">Te guiamos hasta la firma y te asistimos después del contrato.</p>
+  </div>
+</div>
+
+<style>
+@media (max-width: 720px){
+  /* 1 por fila en móviles para máxima legibilidad */
+  .how-grid { grid-template-columns: 1fr !important; }
+}
+</style>
+
+<!-- Bloque de modelos existente (mantengo tu estilo y textos) -->
+<h2 style="color:#0d47a1; font-weight:800; margin-top:10px; text-align:center;">Nuestros Modelos</h2>
+<div class="modelos-container" style="max-width:750px; margin:16px auto 45px auto;">
+  <div class="modelo" style="background-color:#fff; padding:28px 25px; border-radius:12px; margin-bottom:26px; box-shadow:0 5px 15px rgba(21,101,192,0.15); border:1px solid #d1dffb;">
+    <h3 style="margin-bottom:14px; font-size:1.5rem; border-bottom:3px solid #0d47a1; padding-bottom:10px; font-weight:800; color:#0d47a1; letter-spacing:0.7px;">
+      Modelo X - Prospección sin éxito (250 €)
+    </h3>
+    <p style="color:#555; font-size:1.1rem; line-height:1.35;">
+      Realizamos una búsqueda y prospección personalizada sin garantía de éxito, ideal para clientes con mayor flexibilidad y presupuesto ajustado.
+    </p>
+  </div>
+  <div class="modelo" style="background-color:#fff; padding:28px 25px; border-radius:12px; margin-bottom:26px; box-shadow:0 5px 15px rgba(21,101,192,0.15); border:1px solid #d1dffb;">
+    <h3 style="margin-bottom:14px; font-size:1.5rem; border-bottom:3px solid #0d47a1; padding-bottom:10px; font-weight:800; color:#0d47a1; letter-spacing:0.7px;">
+      Modelo Y - Prospección con éxito (600 - 650 €)
+    </h3>
+    <p style="color:#555; font-size:1.1rem; line-height:1.35;">
+      Nos comprometemos a encontrar y cerrar la operación de alquiler o compra que se ajuste a tus criterios, asegurando resultados positivos.
+    </p>
+  </div>
+  <div class="modelo" style="background-color:#fff; padding:28px 25px; border-radius:12px; margin-bottom:26px; box-shadow:0 5px 15px rgba(21,101,192,0.15); border:1px solid #d1dffb;">
+    <h3 style="margin-bottom:14px; font-size:1.5rem; border-bottom:3px solid #0d47a1; padding-bottom:10px; font-weight:800; color:#0d47a1; letter-spacing:0.7px;">
+      Modelo Z - Servicio Premium (850 - 900 €)
+    </h3>
+    <p style="color:#555; font-size:1.1rem; line-height:1.35;">
+      Incluye prospección con éxito y servicios exclusivos como taxi, acompañamiento presencial, asesoramiento postventa y atención personalizada integral.
+    </p>
+  </div>
+</div>
+
+<!-- Mantengo tu formulario tal cual estaba -->
+<h2 style="text-align:center; color:#0d47a1; font-size:2rem; font-weight:800; margin-top:10px; margin-bottom:20px; letter-spacing:1.1px;">
+  Formulario de interés
+</h2>
+<p style="max-width:700px; margin:0 auto 22px auto; color:#444; font-size:1.04rem; text-align:center;">
+  Déjanos tus datos y el modelo de servicio que te interesa para que podamos contactarte y ayudarte a iniciar el proceso.
+</p>
+
+<form method="POST" action="{{ url_for('modelos') }}" novalidate
+      style="max-width:720px; margin:0 auto; background:#fff; padding:28px 24px; border-radius:12px; box-shadow:0 6px 20px rgba(21,101,192,0.18); border:1px solid #d1dffb;">
+  <label for="modelo" style="display:block; margin-bottom:8px; font-weight:700; color:#2a3a69; font-size:1.02rem;">Seleccione el modelo de servicio:</label>
+  <select name="modelo" id="modelo" required
+          style="width:100%; padding:12px 14px; margin-bottom:18px; border:2px solid #cbd4f7; border-radius:8px; font-size:1.03rem; color:#222; font-weight:500;">
+    <option value="" disabled selected>Seleccione una opción</option>
+    <option value="Modelo X">Modelo X - Prospección sin éxito (250 €)</option>
+    <option value="Modelo Y">Modelo Y - Prospección con éxito (600-650 €)</option>
+    <option value="Modelo Z">Modelo Z - Servicio Premium (850-900 €)</option>
+  </select>
+
+  <label for="nombre" style="display:block; margin-bottom:8px; font-weight:700; color:#2a3a69; font-size:1.02rem;">Nombre Completo:</label>
+  <input type="text" id="nombre" name="nombre" required autocomplete="name"
+         style="width:100%; padding:12px 14px; margin-bottom:18px; border:2px solid #cbd4f7; border-radius:8px; font-size:1.03rem; color:#222; font-weight:500;"/>
+
+  <label for="email" style="display:block; margin-bottom:8px; font-weight:700; color:#2a3a69; font-size:1.02rem;">Correo Electrónico:</label>
+  <input type="email" id="email" name="email" required autocomplete="email"
+         style="width:100%; padding:12px 14px; margin-bottom:18px; border:2px solid #cbd4f7; border-radius:8px; font-size:1.03rem; color:#222; font-weight:500;"/>
+
+  <label for="telefono" style="display:block; margin-bottom:8px; font-weight:700; color:#2a3a69; font-size:1.02rem;">Teléfono:</label>
+  <input type="tel" id="telefono" name="telefono" required autocomplete="tel"
+         style="width:100%; padding:12px 14px; margin-bottom:18px; border:2px solid #cbd4f7; border-radius:8px; font-size:1.03rem; color:#222; font-weight:500;"/>
+
+  <label for="mensaje" style="display:block; margin-bottom:8px; font-weight:700; color:#2a3a69; font-size:1.02rem;">Mensaje (opcional):</label>
+  <textarea id="mensaje" name="mensaje" rows="4"
+            style="width:100%; padding:12px 14px; margin-bottom:18px; border:2px solid #cbd4f7; border-radius:8px; font-size:1.03rem; color:#222; font-weight:500;"></textarea>
+
+  <input type="submit" value="Enviar"
+         style="background-color:#1976d2; color:#fff; border:none; padding:14px 0; font-weight:800; font-size:1.15rem; border-radius:50px; width:100%; cursor:pointer; box-shadow:0 7px 18px rgba(25,118,210,0.7); letter-spacing:1.05px;"/>
+</form>
+
+<div class="volver" style="text-align:center; margin-top:22px; font-weight:700; letter-spacing:1px;">
+  <a href="{{ url_for('home') }}" style="color:#0d47a1;">← Volver a Inicio</a> |
+  <a href="{{ url_for('contacto') }}" style="color:#0d47a1;">Contacto General</a>
+</div>
+
+<!-- Responsive para las tarjetas del proceso -->
+<style>
+@media (max-width: 720px){
+  div[style*="grid-template-columns:repeat(2"] { grid-template-columns: 1fr !important; }
+}
+</style>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+

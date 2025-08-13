@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Contacto - Inmobiliaria Martin Jaramillo{% endblock %}
+{% block content %}
+<h1 style="color:#0d47a1; text-align:center; font-weight:800; font-size:2.2rem; margin-bottom:20px; letter-spacing:.8px;">
+  Contacto - Inmobiliaria Martin Jaramillo
+</h1>
+<p style="max-width:520px; margin:0 auto 18px auto; color:#444; text-align:center; font-size:1.05rem;">
+  Dinos qué necesitas y te responderemos a la brevedad. Atención online para toda Latinoamérica y presencial en Madrid.
+</p>
+
+<form action="{{ url_for('contacto') }}" method="post" novalidate
+      style="max-width:520px; margin:0 auto; background:#fff; padding:22px 18px; border-radius:10px; box-shadow:0 6px 18px rgba(21,101,192,0.12); border:1px solid #d1ddfc; box-sizing:border-box;">
+  <label for="nombre" style="display:block; margin-bottom:6px; font-weight:700; color:#2a3a69;">Nombre</label>
+  <input type="text" id="nombre" name="nombre" required autocomplete="name"
+         style="width:100%; padding:12px 14px; margin-bottom:14px; border:2px solid #cbd4f7; border-radius:8px; font-size:1rem; color:#222; box-sizing:border-box;">
+
+  <label for="email" style="display:block; margin-bottom:6px; font-weight:700; color:#2a3a69;">Correo electrónico</label>
+  <input type="email" id="email" name="email" required autocomplete="email"
+         style="width:100%; padding:12px 14px; margin-bottom:14px; border:2px solid #cbd4f7; border-radius:8px; font-size:1rem; color:#222; box-sizing:border-box;">
+
+  <label for="mensaje" style="display:block; margin-bottom:6px; font-weight:700; color:#2a3a69;">Mensaje</label>
+  <textarea id="mensaje" name="mensaje" rows="5" required
+            style="width:100%; padding:12px 14px; margin-bottom:16px; border:2px solid #cbd4f7; border-radius:8px; font-size:1rem; color:#222; box-sizing:border-box; resize:vertical;"></textarea>
+
+  <button type="submit"
+          style="width:100%; background:#1976d2; color:#fff; border:none; padding:14px 0; font-weight:800; font-size:1.05rem; border-radius:50px; cursor:pointer; box-shadow:0 6px 16px rgba(25,118,210,0.45);">
+    Enviar
+  </button>
+</form>
+
+<!-- Ajustes extra para móviles y evitar desbordes -->
+<style>
+@media (max-width: 600px){
+  form[novalidate] { padding:18px 14px !important; }
+  input, textarea { font-size:16px !important; } /* evita zoom en iOS */
+}
+</style>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

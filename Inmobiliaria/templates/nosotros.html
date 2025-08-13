@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Nosotros - Martín Jaramillo Asesores Inmobiliarios{% endblock %}
+{% block content %}
+<section style="max-width:900px; margin:0 auto; color:#444;">
+    <h1 style="color:#0d47a1; font-weight:800;">Quiénes Somos</h1>
+    <p>Somos una firma madrileña especializada en ofrecer soluciones inmobiliarias a clientes de América Latina. Con más de una década de experiencia, conocemos las preocupaciones, los tiempos y los trámites necesarios para que tu inversión o alquiler llegue a buen puerto.</p>
+
+    <h2 style="color:#0d47a1; font-weight:700;">Nuestra misión</h2>
+    <p>Facilitar procesos inmobiliarios seguros y eficientes para clientes internacionales, con un enfoque especial en el público latinoamericano.</p>
+
+    <h2 style="color:#0d47a1; font-weight:700;">Nuestra visión</h2>
+    <p>Ser la inmobiliaria de referencia para la comunidad latinoamericana en Madrid, ofreciendo servicios transparentes, personalizados y confiables.</p>
+
+    <img src="{{ url_for('static', filename='img/team_photo.jpg') }}" alt="Equipo Martín Jaramillo" style="width:100%; max-width:600px; display:block; margin:30px auto; border-radius:12px; box-shadow:0 6px 18px rgba(25,118,210,0.25);">
+</section>
+{% endblock %}
+
+
+

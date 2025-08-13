@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Gracias - Inmobiliaria Martin Jaramillo{% endblock %}
+{% block content %}
+<div style="text-align:center; max-width:700px; margin: 0 auto; color:#444; font-size:1.1rem; line-height: 1.55;">
+  <img src="{{ url_for('static', filename='logo_mj_v3.png') }}" alt="Logo Inmobiliaria Martin Jaramillo" style="height:100px; margin-bottom:30px;" />
+  <h1 style="color:#0d47a1; font-weight:800; font-size:2.4rem; margin-bottom:25px; letter-spacing:1.2px;">¡Gracias, {{ nombre }}!</h1>
+  <p style="margin-bottom: 30px;">Hemos recibido tu interés en el <strong>{{ modelo }}</strong>.</p>
+  <p>Nos pondremos en contacto contigo en breve para ayudarte a encontrar la vivienda ideal en Madrid.</p>
+  <a href="{{ url_for('home') }}" style="background-color:#1976d2; color:#fff; padding:14px 38px; text-decoration:none; font-weight:800; border-radius:50px; transition: background-color 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 6px 20px rgba(25,118,210,0.7); font-size:1.1rem; user-select:none; letter-spacing:0.9px; display:inline-block; margin-top: 40px;">Volver al Inicio</a>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
